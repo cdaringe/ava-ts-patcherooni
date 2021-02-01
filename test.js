@@ -1,4 +1,4 @@
-import ava from "ava";
+const ava = require("ava");
 
 ava("debug me, amigo", (t) => {
   debugger;

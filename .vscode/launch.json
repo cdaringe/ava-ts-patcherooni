@@ -11,7 +11,13 @@
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ava",
       "runtimeArgs": ["${file}"],
       "outputCapture": "std"
-      // "skipFiles": ["<node_internals>/**/*.js"] // i've disabled simply to remove more variables
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug AVA, itself!",
+      "args": ["${workspaceFolder}/node_modules/.bin/ava", "${file}"],
+      "outputCapture": "std"
     }
   ]
 }
